@@ -75,6 +75,7 @@
                     aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
+                <body>
                 <div>
                     Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
                     images, lists, etc.
@@ -86,6 +87,11 @@
                             placeholder="Example input placeholder">
                     </div>
                 </form>
+                
+                </body>
+
+
+
             </div>
         </div>
 
@@ -179,7 +185,79 @@
                 </div>
             </div>
         </form>
+
+
+
+
+
     </section>
+    <section id="seccion5">
+        <div class="descuentos">
+          <div class="d1" id="estudiante">
+            <h1>Estudiante</h1>
+            <p>Tienen un descuento</p>
+            <h3 class="zoom" id="porcentaje">80%</h3>
+            <p id="document"><b>* presentar documentación</b></p>
+          </div>
+          <div class="d2" id="trainee">
+            <h1>Trainee</h1>
+            <p>Tienen un descuento</p>
+            <h3 class="zoom" id="porcentaje">50%</h3>
+            <p id="document"><b>* presentar documentación</b></p>
+          </div>
+          <div class="d3" id="junior">
+            <h1>Junior</h1>
+            <p>Tienen un descuento</p>
+            <h3 class="zoom" id="porcentaje">15%</h3>
+            <p id="document"><b>* presentar documentación</b></p>
+          </div>
+        </div>
+        <div class="form2">
+          <div class="encabezado_F">
+            <div class="seccion_5_titulo1"> VENTA</div>
+            <div class="seccion_5_titulo2">
+              <h1>VALOR DE TICKET: <span> $ 200.00</span></h1>
+            </div>
+          </div>
+          <form id="miForm">
+            <div class="body_form1">
+              <input type="text" name="nombres" id="firstName" required="" placeholder="Nombres" size="40">
+              <input type="text" name="apellidos" id="lastName" required="" placeholder="Apellidos" size="40">
+            </div>
+            <div class="body_form2">
+              <input type="email" name="correo" id="email" required="" placeholder="Correo" size="40">
+            </div>
+            <div class="body_form3">
+              <div class="body_form_cantidad">
+                
+                <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" size="40">
+              </div>
+              <div class="body_form_categoria">
+                
+                <input type="text" name="categoria" id="categoria" placeholder="Categoría" list="miLista" size="40">
+              </div>
+              <datalist id="miLista">
+                <option value="Estudiante">Estudiante</option>
+                <option value="Trainee">Trainee</option>
+                <option value="Junior">Junior</option>
+              </datalist>
+            </div>
+            <div id="montoPagar">Total a Pagar: $</div>
+            <div class="buttons">
+              <div class="resumen">
+                <input type="button" id="enviar" value="Resumen" onclick="montoAPagar()">
+              </div>
+              <div class="borrar">
+                <input type="reset" id="delete" value="Borrar" onclick="limpiar()">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    
+
+
+
 
     <footer>
         <div class="container-fluid bg-primary">
